@@ -1,5 +1,6 @@
  import { DonateForm } from './donate-form.js';
  import { DonateList } from './donate-list.js';
+ import * as func from '../core/utils/utils';
 
 
  export default class App {
@@ -25,6 +26,7 @@
      }
      createNewDonate(newDonate) {
          this.state.donates.push(newDonate);
+         func.calculateSumOfNumbers(this.state.donates.map(item => item.amount));
          this.state.totalAmount += newDonate.amount;
          this.DonateForm.updateTotalAmount(newDonate.amount);
          this.DonateList.updateDonates();

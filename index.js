@@ -1,6 +1,6 @@
 import './index.css';
 import * as func from './src/core/utils/utils';
-import App from './src/modules/app.js';
+import App from './src/modules/app';
 
 
 
