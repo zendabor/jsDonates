@@ -1,7 +1,8 @@
 export function calculateSumOfNumbers(numbers) {
     let sum = 0;
     numbers.forEach(element => {
-        sum += element.amount;
+        sum += element;
+        console.log(sum)
         return sum;
     });
 }

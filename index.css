@@ -47,11 +47,10 @@ body {
 }
 
 .donate-item {
-    color: var(--default-text-color);
+    color: var(--donate-item-text-color);
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
-    width: 15rem;
+    align-items: center;
 }
 
 .donate-form {

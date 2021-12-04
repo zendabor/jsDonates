@@ -9,7 +9,7 @@ export class DonateList {
     render() {
         const mainContainer = this.mainContainer || document.createElement('div');
         this.mainContainer = mainContainer;
-        mainContainer.className = 'donates';
+        mainContainer.className = 'donates-container';
         const donatTitle = this.donatTitle || document.createElement('h1');
         this.donatTitle = donatTitle;
         donatTitle.className = 'donates-container__title';

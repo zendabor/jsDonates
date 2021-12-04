@@ -11,6 +11,7 @@ const donates = [
     { amount: 3, date: new Date() },
     { amount: 1, date: new Date() },
 ]
+console.log(donates.map(item => item.amount))
 const totalAmount = func.calculateSumOfNumbers(donates.map(item => item.amount));
 
 
