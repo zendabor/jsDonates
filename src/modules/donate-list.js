@@ -2,9 +2,8 @@ import { settings as setup } from '../core/constans/settings';
 import * as func from '../core/utils/utils';
 
 export class DonateList {
-    constructor(donates, createNewDonate) {
+    constructor(donates) {
         this.donates = donates;
-        this.createNewDonate = createNewDonate;
     }
     render() {
         const mainContainer = this.mainContainer || document.createElement('div');

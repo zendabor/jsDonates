@@ -26,9 +26,9 @@
      }
      createNewDonate(newDonate) {
          this.state.donates.push(newDonate);
-         func.calculateSumOfNumbers(this.state.donates.map(item => item.amount));
-         this.state.totalAmount += newDonate.amount;
-         this.DonateForm.updateTotalAmount(newDonate.amount);
+         const allmoney = func.calculateSumOfNumbers(this.state.donates.map(item => item.amount));
+         //  this.state.totalAmount += newDonate.amount;
+         this.DonateForm.updateTotalAmount(allmoney);
          this.DonateList.updateDonates();
      }
  }
